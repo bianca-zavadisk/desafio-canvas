@@ -133,7 +133,7 @@
         }
 
         // Colisão Raquete Jogador
-        if (this.x < 90 && this.x > 75 && this.y > player.y && this.y < player.y + PADDLE_HEIGHT) {
+        if (this.x < 90 && this.x > 65 && this.y > player.y && this.y < player.y + PADDLE_HEIGHT) {
             if (this.speedX < 0) {
                 this.speedX = -this.speedX;
                 player.score++;
@@ -143,7 +143,7 @@
         }
 
         // Colisão Raquete Computador
-        if (this.x > 610 && this.x < 625 && this.y > computer.y && this.y < computer.y + PADDLE_HEIGHT) {
+        if (this.x > 610 && this.x < 635 && this.y > computer.y && this.y < computer.y + PADDLE_HEIGHT) {
             if (this.speedX > 0) {
                 this.speedX = -this.speedX;
                 this.x = 610;
